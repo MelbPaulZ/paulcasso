@@ -1,5 +1,4 @@
-# paulcasso
-An android library to blur image
+# Paulcasso
 
 ## Use:
 
@@ -18,6 +17,17 @@ Drawable drawable = BlurredBitmap.getInstance(getApplicationContext())
 * **size(int width, int height):** To crop
 * **radius(int radius):** The blurred value
 * **start(int startX, int startY):** The crop start x and y coordinate
+
+## Default Use:
+```
+Drawable drawable = BlurredBitmap.getInstance(getApplicationContext())
+                .loadDrawable(getResources().getDrawable(R.drawable.wechat))
+                .buildBlurredDrawable();
+
+```
+
+This will return the raw size of drawable.
+
 
 ## Gradle:
 In your project build.gradle:
